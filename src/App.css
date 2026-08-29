@@ -1,0 +1,54 @@
+/* ===== QuantityDetails styles ===== */
+
+.quantity-wrapper {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.quantity-wrapper h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.quantity-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.quantity-table thead th {
+  background: #f7f7f7;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #ddd;
+}
+
+.quantity-table tbody td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+.quantity-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.loading,
+.error,
+.empty {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 500;
+}
