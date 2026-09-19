@@ -114,7 +114,7 @@ const Dashboard = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Quantity and Image finder</h1>
+      <h1 style={styles.title}>Lot Quantity  Image finder</h1>
 
       <div style={styles.cardsContainer}>
         {/* Lot Quantity Card */}
