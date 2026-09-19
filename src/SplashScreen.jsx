@@ -14,13 +14,13 @@ const SplashScreen = ({ onFinish }) => {
         }
         return prev + 10;
       });
-    }, 150);
+    }, 100);
 
     // Hide splash screen after delay
     const timer = setTimeout(() => {
       setIsVisible(false);
-      setTimeout(onFinish, 500); // Wait for fade out animation
-    }, 2500);
+      setTimeout(onFinish, 400); // Wait for fade out animation
+    }, 1500);
 
     return () => {
       clearInterval(progressInterval);
@@ -35,14 +35,14 @@ const SplashScreen = ({ onFinish }) => {
       left: 0,
       width: "100%",
       height: "100%",
-      backgroundColor: "#6a11cb",
-      background: "linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)",
+      backgroundColor: "rgb(72, 26, 123)",
+      background: "linear-gradient(135deg, rgb(72, 26, 123) 0%, rgb(105, 38, 180) 100%)",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
       zIndex: 9999,
-      transition: "opacity 0.5s ease-out",
+      transition: "opacity 0.4s ease-out",
       opacity: isVisible ? 1 : 0,
       pointerEvents: isVisible ? "auto" : "none",
     },
@@ -66,7 +66,7 @@ const SplashScreen = ({ onFinish }) => {
       letterSpacing: "1px",
     },
     tagline: {
-      color: "rgba(255, 255, 255, 0.8)",
+      color: "rgba(255, 255, 255, 0.85)",
       fontSize: "1.1rem",
       margin: 0,
     },
@@ -83,7 +83,7 @@ const SplashScreen = ({ onFinish }) => {
       width: `${progress}%`,
       backgroundColor: "white",
       borderRadius: "3px",
-      transition: "width 0.3s ease",
+      transition: "width 0.2s ease",
     },
     loadingText: {
       color: "white",
@@ -115,9 +115,9 @@ const SplashScreen = ({ onFinish }) => {
             <circle cx="50" cy="50" r="45" fill="white" />
             <path
               d="M35,30 L65,30 L75,50 L65,70 L35,70 L25,50 Z"
-              fill="#6a11cb"
+              fill="rgb(72, 26, 123)"
             />
-            <circle cx="50" cy="50" r="15" fill="#2575fc" />
+            <circle cx="50" cy="50" r="15" fill="rgb(105, 38, 180)" />
           </svg>
         </div>
         <h1 style={splashStyles.appName}>InventoryPro</h1>
@@ -131,8 +131,6 @@ const SplashScreen = ({ onFinish }) => {
       <p style={splashStyles.loadingText}>
         {progress < 100 ? "Loading inventory data..." : "Ready!"}
       </p>
-      
-      <div style={splashStyles.company}>© 2023 Company Name</div>
     </div>
   );
 };

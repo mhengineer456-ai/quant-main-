@@ -275,11 +275,12 @@ const LotImage = () => {
     },
     inputWrapper: {
       display: 'flex',
-      gap: '8px',
-      alignItems: 'center',
+      flexDirection: 'column',
+      gap: '12px',
+      width: '100%',
     },
     input: {
-      flex: 1,
+      width: '100%',
       padding: '12px 18px',
       fontSize: '14px',
       border: '1.5px solid rgba(72, 26, 123, 0.16)',
@@ -290,14 +291,16 @@ const LotImage = () => {
       fontFamily: 'inherit',
       fontWeight: '500',
       color: '#1e1b4b',
+      boxSizing: 'border-box',
     },
     inputFocus: {
       borderColor: brand,
       boxShadow: '0 0 0 3px rgba(72, 26, 123, 0.15)',
     },
     button: {
+      width: '100%',
       padding: '12px 22px',
-      fontSize: '13px',
+      fontSize: '14px',
       fontWeight: '600',
       background: brandGradient,
       color: 'white',
@@ -308,6 +311,8 @@ const LotImage = () => {
       boxShadow: '0 4px 14px rgba(72, 26, 123, 0.3)',
       fontFamily: 'inherit',
       whiteSpace: 'nowrap',
+      textAlign: 'center',
+      boxSizing: 'border-box',
     },
     buttonDisabled: {
       opacity: 0.5,

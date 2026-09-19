@@ -119,7 +119,7 @@ export default function LotQuantity({
   cuttingTab: propCuttingTab,
 }) {
   const navigate = useNavigate();
-  const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(false);
   const [rows, setRows] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);

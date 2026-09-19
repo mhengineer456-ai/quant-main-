@@ -114,8 +114,8 @@ const Dashboard = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Dashboard</h1>
-      
+      <h1 style={styles.title}>Quantity and Image finder</h1>
+
       <div style={styles.cardsContainer}>
         {/* Lot Quantity Card */}
         <div
@@ -137,7 +137,7 @@ const Dashboard = () => {
           <p style={styles.cardDescription}>
             View and manage inventory quantities
           </p>
-          <button 
+          <button
             style={styles.cardButton}
             onClick={(e) => {
               e.stopPropagation();
@@ -168,7 +168,7 @@ const Dashboard = () => {
           <p style={styles.cardDescription}>
             View and manage lot photographs
           </p>
-          <button 
+          <button
             style={styles.cardButton}
             onClick={(e) => {
               e.stopPropagation();
